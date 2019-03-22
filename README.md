@@ -1,9 +1,10 @@
-# Elastic stack (ELK) on Docker
+# Elastic stack (ELK) on Docker with Logspout
 
-Run the latest version of the [Elastic stack](https://www.elastic.co/elk-stack) with Docker and Docker Compose.
+Run the latest version of the [Elastic stack](https://www.elastic.co/elk-stack) with Docker and Docker Compose with logspout.
 
 It will give you the ability to analyze any data set by using the searching/aggregation capabilities of Elasticsearch
-and the visualization power of Kibana.
+and the visualization power of Kibana. especially this stack will give you the ability to manage
+Docker logs in Elasticsearch.
 
 Based on the official Docker images from Elastic:
 
