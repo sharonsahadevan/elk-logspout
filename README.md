@@ -1,9 +1,5 @@
 # Elastic stack (ELK) on Docker
 
-[![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Elastic Stack version](https://img.shields.io/badge/ELK-6.6.1-blue.svg?style=flat)](https://github.com/deviantony/docker-elk/issues/367)
-[![Build Status](https://api.travis-ci.org/deviantony/docker-elk.svg?branch=master)](https://travis-ci.org/deviantony/docker-elk)
-
 Run the latest version of the [Elastic stack](https://www.elastic.co/elk-stack) with Docker and Docker Compose.
 
 It will give you the ability to analyze any data set by using the searching/aggregation capabilities of Elasticsearch
@@ -15,11 +11,6 @@ Based on the official Docker images from Elastic:
 * [logstash](https://github.com/elastic/logstash-docker)
 * [kibana](https://github.com/elastic/kibana-docker)
 
-**Note**: Other branches in this project are available:
-
-* [`x-pack`](https://github.com/deviantony/docker-elk/tree/x-pack): X-Pack support
-* [`searchguard`](https://github.com/deviantony/docker-elk/tree/searchguard): Search Guard support
-* [`vagrant`](https://github.com/deviantony/docker-elk/tree/vagrant): run Docker inside Vagrant
 
 ## Contents
 
@@ -89,6 +80,7 @@ Give Kibana a few seconds to initialize, then access the Kibana web UI by hittin
 
 By default, the stack exposes the following ports:
 * 5000: Logstash TCP input.
+* 5044: Logstash UDP input
 * 9200: Elasticsearch HTTP
 * 9300: Elasticsearch TCP transport
 * 5601: Kibana
